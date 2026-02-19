@@ -136,7 +136,7 @@
             extraOptions = lib.mkOption {
               type = lib.types.listOf lib.types.str;
               default = [
-                "--gpus=all"
+                "--device=nvidia.com/gpu=all"
                 "--shm-size=8g"
                 "--ulimit=nofile=2048:2048"
               ];
